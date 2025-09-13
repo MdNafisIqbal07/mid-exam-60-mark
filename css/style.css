@@ -179,6 +179,13 @@ flex: 1 0 0;
 border: 1px solid var(--colors-neutral-600, #3C3B5E);
 background: var(--colors-neutral-800, #262540);
 }
+.hero>.left>.left2>.c p:first-child{
+    font-size: 18px;
+    color: var(--colors-neutral-0, #FFF);
+}
+.hero>.left>.left2>.c p:last-child{
+    font-size: 32px;
+}
 
 .hero>.left>.df{
     color: var(--colors-neutral-0, #FFF);
@@ -260,8 +267,183 @@ margin-bottom: 10px;
     margin-bottom: 10px;
 }
 
-.right > .forecast > .time :nth-child(3){
+.hero>.right > .forecast > .time :nth-child(3){
     display: flex;
     margin-left: auto;
 
 }
+
+
+
+@media (max-width: 768px){
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+     .hero>.left>.context{
+        height: auto;
+        width: 100%;
+        
+        margin-left: 0;
+        margin-top: 20px;
+        margin-right: -60px;}
+
+        .hero>.left>.context>.a{
+            margin-left: 30px;
+            margin-top: 50px;
+        }
+
+        .hero>.left>.context>.b{
+            margin-left: 220px;
+            margin-top: 40px;
+        }
+
+    nav {
+        width: 100%;
+         display: flex;
+         justify-content: space-between;
+            padding: 10px 20px;}
+
+    nav > ul {
+       
+    
+        gap: 10px;
+        margin-top: 10px;  
+    }
+
+    .hero>.right{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+     }
+     .hero>.right>.HourlyForecast{
+         width: 100%;
+     }
+     .hero>.right>.forecast>.time{
+        width: 675px
+     }
+}
+
+@media (max-width: 480px){
+    
+    .hero {
+        grid-template-columns: 1fr;
+        padding: o 5px;
+        width: 100%;
+    }
+    .hero>.left{
+        width: 100%;
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    body h1{
+        width: 100%;
+        margin-left: 150px;
+    }
+    .search{
+        width: 100%;
+        font-size: 24px;
+        align-items: center;
+        margin-left: 150px;
+        margin-top: 40px;
+    }
+     input[type="search"]{
+        width: 100%;
+        padding: 12px 20px;
+        border: 1px solid var(--colors-neutral-600, #3C3B5E);
+        border-radius: var(--corner-radius-12, 12px);
+        background: var(--colors-neutral-800, #262540);
+        color: var(--colors-neutral-0, #FFF);
+        font-size: 22px;
+    }
+    .hero>.left>.context{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-right: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+        .hero>.left>.context>.a{
+            margin-left: 0px;
+            margin-top: 50px;
+            font-size: 32px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .hero>.left>.context>.b{
+             text-align: center;
+            align-items: center;
+            margin-left: 400px;
+            margin-top: 40px;
+            margin-right: 00px;
+        }
+        .hero>.left>.left2>.c{
+            width: 100%;
+            display:flex;
+           
+        }
+
+        .hero>.left>.left2{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+    nav {
+        width: 100%;
+         display: flex;
+         justify-content: space-between;
+        padding: 10px 20px;
+   }
+
+    nav > ul {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;  
+        
+        margin-right: -250px;
+   
+    }
+
+    .hero>.right{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        ;
+
+     }
+     .hero>.right>.HourlyForecast{
+         width: 100%;
+     }
+     .hero>.right>.forecast>.time{
+        width: 100%
+     }
+
+     .hero>.left>.weather>.wday.left2>.c{
+            width: 100%;
+           
+        }
+        /* .hero>.weather{
+            width: 100%;
+        } */
+        /* .hero>.weather>.wday{
+            width: 100%;
+        } */
+
+        .hero>.left>.weather{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+        .hero>.right>.forecast{
+            width: 100%;
+            justify-content: space-between;
+        }
+}
+
